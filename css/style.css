@@ -456,7 +456,8 @@ footer
 
 	header
 	{
-		background-size:125%;	
+		background-size:125%;
+
 	}
 
 }
@@ -466,6 +467,7 @@ footer
 	header
 	{
 		background-size:148%;	
+		height: 48vh;	
 	}
 
 
