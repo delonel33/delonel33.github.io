@@ -350,3 +350,52 @@ button {
     .section-reviews-rigth__path-down {
       width: 23px;
       height: 15px; }
+
+.section-team {
+  font-family: 'Raleway', sans-serif;
+  padding-top: 103px;
+  padding-bottom: 94px; }
+  .section-team-wrapper {
+    text-align: center; }
+    .section-team-wrapper-top {
+      max-width: 558px;
+      margin: 0 auto; }
+      .section-team-wrapper-top-title {
+        color: #061e37;
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 29px; }
+      .section-team-wrapper-top-subtitle {
+        color: #b0bec5;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 80px; }
+    .section-team-wrapper-content {
+      max-width: 460px;
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center; }
+      .section-team-wrapper-content-block:nth-child(2) {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 50%; }
+        .section-team-wrapper-content-block:nth-child(2) img {
+          width: 160px;
+          height: 160px;
+          border-radius: 50%; }
+      .section-team-wrapper-content-block {
+        margin-bottom: 44px; }
+    .section-team-wrapper-bottom {
+      max-width: 647px;
+      margin: 0 auto; }
+      .section-team-wrapper-bottom-title {
+        color: #061e37;
+        font-size: 18px;
+        font-weight: 800; }
+      .section-team-wrapper-bottom-subtitle {
+        color: #b0bec5;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 80px;
+        margin-top: 20px; }
