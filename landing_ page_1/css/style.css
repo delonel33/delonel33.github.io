@@ -353,8 +353,7 @@ button {
 
 .section-team {
   font-family: 'Raleway', sans-serif;
-  padding-top: 103px;
-  padding-bottom: 94px; }
+  padding-top: 103px; }
   .section-team-wrapper {
     text-align: center; }
     .section-team-wrapper-top {
@@ -399,3 +398,63 @@ button {
         line-height: 25px;
         margin-bottom: 80px;
         margin-top: 20px; }
+
+.section-contact {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fafafa;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .section-contact-wrapper {
+    max-width: 600px;
+    margin: 0 auto; }
+    .section-contact-wrapper-top {
+      max-width: 500px;
+      margin: 0 auto;
+      margin-bottom: 52px; }
+      .section-contact-wrapper-top-title {
+        color: #061e37;
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 29px; }
+      .section-contact-wrapper-top-subtitle {
+        color: #061e37;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 80px; }
+    .section-contact-wrapper-forms {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .section-contact-wrapper-forms input::placeholder {
+        color: #061e37; }
+      .section-contact-wrapper-forms input {
+        border: 0.5px solid #061e37;
+        padding-top: 13px;
+        padding-left: 20px;
+        padding-bottom: 13px;
+        padding-right: 100px;
+        border-radius: 5px;
+        margin-bottom: 21px;
+        outline: none;
+        font-size: 14px;
+        font-weight: 600;
+        color: #061e37; }
+      .section-contact-wrapper-forms-last-imput {
+        width: 600px;
+        height: 150px; }
+      .section-contact-wrapper-forms-bottom {
+        font-weight: 600; }
+        .section-contact-wrapper-forms-bottom input {
+          margin-right: 9px; }
+      .section-contact-wrapper-forms button {
+        outline: none;
+        text-transform: uppercase;
+        background-color: #1de9b6;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 19px;
+        padding-left: 40px;
+        padding-right: 45px;
+        border-radius: 5px;
+        cursor: pointer; }
