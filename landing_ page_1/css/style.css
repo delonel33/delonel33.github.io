@@ -16,7 +16,8 @@ button:checked {
 
 button {
   border: none;
-  background-color: white; }
+  background-color: white;
+  outline: none; }
 
 .blue {
   background-color: #80d8ff; }
@@ -36,11 +37,13 @@ button {
 .flex-close {
   padding: 0; }
 
+.section-outer {
+  padding-left: 20px;
+  padding-right: 20px; }
+
 .section-inner {
   max-width: 1440px;
-  margin: 0 auto;
-  padding-left: 25px;
-  padding-right: 25px; }
+  margin: 0 auto; }
 
 .section-header {
   background-image: url(../img/background.png);
@@ -50,7 +53,9 @@ button {
   .section-header .section-inner {
     z-index: 10;
     height: 100vh;
-    position: relative; }
+    position: relative;
+    display: flex;
+    flex-direction: column; }
   .section-header::before {
     content: '';
     position: absolute;
@@ -76,6 +81,8 @@ button {
         height: 30px;
         color: white;
         margin-right: 10px; }
+      .section-header-top-header-logo a {
+        display: flex; }
     .section-header-top-header-nav ul {
       display: flex;
       color: white; }
@@ -83,6 +90,8 @@ button {
         font-size: 15px; }
       .section-header-top-header-nav ul li:not(:first-child) {
         margin-left: 50px; }
+      .section-header-top-header-nav ul li:hover {
+        border-bottom: 0.5px solid white; }
     .section-header-top-header-autorization {
       display: flex;
       align-items: center;
@@ -94,17 +103,29 @@ button {
       padding-left: 20px;
       padding-right: 26px;
       border-radius: 3px;
-      border: 1px solid white; }
+      border: 0.5px solid white;
+      cursor: pointer; }
+    .section-header-top-header-autorization:hover {
+      border-color: #10c1c2; }
+    @media (max-width: 991px) {
+      .section-header-top-header {
+        flex-direction: column; }
+        .section-header-top-header-nav {
+          margin-top: 20px;
+          margin-bottom: 20px; }
+          .section-header-top-header-nav ul {
+            justify-content: space-around; }
+        .section-header-top-header-autorization {
+          justify-content: center; } }
   .section-header-content {
-    padding: 0px;
-    margin: 0;
-    margin-top: 167px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center; }
     .section-header-content-left {
       display: flex;
       flex-direction: column;
-      flex-basis: 583px; }
+      max-width: 583px; }
       .section-header-content-left-title {
         font-size: 55px;
         color: white;
@@ -134,7 +155,16 @@ button {
           background-color: white; }
     .section-header-content-right img {
       margin: 0px;
-      padding: 0px; }
+      padding: 0px;
+      max-width: 100%; }
+    @media (max-width: 991px) {
+      .section-header-content {
+        flex-direction: column; }
+        .section-header-content-left {
+          align-items: center;
+          text-align: center; }
+        .section-header-content-right {
+          max-width: 506px; } }
 
 .section-information {
   font-family: 'Raleway', sans-serif;
@@ -232,7 +262,7 @@ button {
       margin-top: 10px;
       line-height: 25px; }
   .section-services-wraper-block {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -351,6 +381,9 @@ button {
     .section-reviews-rigth__path-down {
       width: 23px;
       height: 15px; }
+  @media (max-width: 991px) {
+    .section-reviews {
+      flex-direction: column; } }
 
 .section-team {
   font-family: 'Raleway', sans-serif;
@@ -475,6 +508,8 @@ button {
       color: white;
       text-transform: uppercase;
       margin-bottom: 53px; }
+      .section-footer-wrapper-left-logo a {
+        display: flex; }
     .section-footer-wrapper-left img {
       width: 30px;
       height: 30px;
@@ -500,5 +535,7 @@ button {
         color: white; }
         .section-footer-wrapper-right-nav ul li {
           font-size: 15px; }
+        .section-footer-wrapper-right-nav ul li:hover {
+          border-bottom: 0.5px solid white; }
         .section-footer-wrapper-right-nav ul li:not(:first-child) {
           margin-left: 50px; }
