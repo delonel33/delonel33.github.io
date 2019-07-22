@@ -39,7 +39,8 @@ button {
 
 .section-outer {
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  overflow: hidden; }
 
 .section-inner {
   max-width: 1440px;
@@ -306,7 +307,8 @@ button {
       line-height: 25px;
       font-weight: 300; }
       .section-services-wraper-block-content img {
-        margin-right: 26px; }
+        margin-right: 26px;
+        display: none; }
 
 .section-reviews {
   font-family: 'Raleway', sans-serif;
@@ -552,7 +554,47 @@ button {
         .section-footer-wrapper-right-nav ul li:not(:first-child) {
           margin-left: 50px; }
 
-@media (max-width: 768px) {
+@media (max-width: 575px) {
+  .section-header-content {
+    flex-direction: column;
+    justify-content: center; }
+    .section-header-content-left {
+      margin-bottom: 10px; }
+      .section-header-content-left-title {
+        font-size: 26px; }
+      .section-header-content-left-wrapper {
+        justify-content: center; }
+  .section-information-wraper {
+    flex-direction: column;
+    align-items: center; }
+    .section-information-wraper-block {
+      margin-bottom: 20px; }
+      .section-information-wraper-block-title {
+        margin-bottom: 20px; }
+  .section-visitors-wraper {
+    flex-direction: column; }
+  .section-services-wraper-block-content img {
+    display: none; }
+  .section-reviews {
+    padding-top: 0px; }
+    .section-reviews .reviews {
+      flex-direction: column; }
+      .section-reviews .reviews .section-reviews-left__path {
+        align-items: center; }
+        .section-reviews .reviews .section-reviews-left__path-title {
+          margin-top: 73px;
+          margin-left: auto; }
+        .section-reviews .reviews .section-reviews-left__path-subtitle {
+          margin-bottom: 30px; }
+      .section-reviews .reviews .section-reviews-rigth__path-block-content {
+        margin-bottom: 10px; }
+      .section-reviews .reviews .section-reviews-rigth__path img {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .section-reviews .reviews button {
+        margin-bottom: 90px; } }
+
+@media (max-width: 767px) {
   .section-header-top-header-nav {
     padding: 0;
     margin: 0;
