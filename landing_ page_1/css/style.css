@@ -72,7 +72,6 @@ button {
     justify-content: space-between; }
     .section-header-top-header-logo {
       display: flex;
-      z-index: 10000;
       font-size: 16px;
       color: white;
       text-transform: uppercase; }
@@ -90,8 +89,6 @@ button {
         font-size: 15px; }
       .section-header-top-header-nav ul li:not(:first-child) {
         margin-left: 50px; }
-      .section-header-top-header-nav ul li:hover {
-        border-bottom: 0.5px solid white; }
     .section-header-top-header-autorization {
       display: flex;
       align-items: center;
@@ -107,16 +104,42 @@ button {
       cursor: pointer; }
     .section-header-top-header-autorization:hover {
       border-color: #10c1c2; }
-    @media (max-width: 991px) {
-      .section-header-top-header {
-        flex-direction: column; }
-        .section-header-top-header-nav {
-          margin-top: 20px;
-          margin-bottom: 20px; }
-          .section-header-top-header-nav ul {
-            justify-content: space-around; }
-        .section-header-top-header-autorization {
-          justify-content: center; } }
+    .section-header-top-header .mobile-nav .menu-link {
+      display: none;
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+      position: fixed;
+      top: 34px;
+      right: 20px; }
+      .section-header-top-header .mobile-nav .menu-link span, .section-header-top-header .mobile-nav .menu-link span:before, .section-header-top-header .mobile-nav .menu-link span:after {
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: absolute;
+        left: 50%;
+        margin-left: -9px;
+        top: 50%;
+        margin-top: -1px;
+        background-color: #333; }
+      .section-header-top-header .mobile-nav .menu-link span::before {
+        transition: all, 0.2s;
+        content: '';
+        margin-top: -6px; }
+      .section-header-top-header .mobile-nav .menu-link span::after {
+        transition: all, 0.2s;
+        content: '';
+        margin-top: 4px; }
+      .section-header-top-header .mobile-nav .menu-link_active span {
+        background-color: transparent; }
+        .section-header-top-header .mobile-nav .menu-link_active span::before {
+          transform: rotate(135deg);
+          margin-top: 0px; }
+        .section-header-top-header .mobile-nav .menu-link_active span::after {
+          transform: rotate(-135deg);
+          margin-top: 0px; }
   .section-header-content {
     display: flex;
     justify-content: space-between;
@@ -157,14 +180,6 @@ button {
       margin: 0px;
       padding: 0px;
       max-width: 100%; }
-    @media (max-width: 991px) {
-      .section-header-content {
-        flex-direction: column; }
-        .section-header-content-left {
-          align-items: center;
-          text-align: center; }
-        .section-header-content-right {
-          max-width: 506px; } }
 
 .section-information {
   font-family: 'Raleway', sans-serif;
@@ -381,9 +396,6 @@ button {
     .section-reviews-rigth__path-down {
       width: 23px;
       height: 15px; }
-  @media (max-width: 991px) {
-    .section-reviews {
-      flex-direction: column; } }
 
 .section-team {
   font-family: 'Raleway', sans-serif;
@@ -539,3 +551,33 @@ button {
           border-bottom: 0.5px solid white; }
         .section-footer-wrapper-right-nav ul li:not(:first-child) {
           margin-left: 50px; }
+
+@media (max-width: 768px) {
+  .section-header-top-header-nav {
+    padding: 0;
+    margin: 0;
+    background-color: #42aaff;
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    left: 100vw;
+    top: 0;
+    transition: all,.2s; }
+    .section-header-top-header-nav ul {
+      flex-direction: column;
+      justify-content: space-around; }
+      .section-header-top-header-nav ul li:not(:first-child) {
+        margin-left: 0px; }
+  .section-header-top-header .nav-active {
+    left: 0;
+    top: 0; }
+  .section-header-top-header-autorization {
+    margin-right: 60px; }
+  .section-header-top-header .mobile-nav {
+    z-index: 1000; }
+    .section-header-top-header .mobile-nav .menu-link {
+      display: block; }
+  .section-footer-wrapper-right-nav {
+    display: none; } }
