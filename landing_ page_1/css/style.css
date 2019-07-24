@@ -554,6 +554,10 @@ button {
         .section-footer-wrapper-right-nav ul li:not(:first-child) {
           margin-left: 50px; }
 
+@media (max-width: 400) {
+  .section-header-top-header-autorization {
+    width: 79px; } }
+
 @media (max-width: 575px) {
   .section-header-content {
     flex-direction: column;
@@ -592,7 +596,9 @@ button {
         margin-top: 10px;
         margin-bottom: 10px; }
       .section-reviews .reviews button {
-        margin-bottom: 90px; } }
+        margin-bottom: 90px; }
+  .section-team-wrapper-content {
+    flex-direction: column; } }
 
 @media (max-width: 767px) {
   .section-header-top-header-nav {
